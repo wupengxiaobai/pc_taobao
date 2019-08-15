@@ -1,0 +1,52 @@
+/*
+    @规则
+        @charset    设置样式编码
+        @import     导入其它样式
+        @media      媒体查询
+        @font-face  自定义字体
+*/
+
+/* 引入重置(预设)样式文件 */
+@import "reset.css";
+
+/* 引入字体样式 */
+@import "iconfont.css";
+
+/* 箭头大小 */
+.allow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#headMessage {
+    font-size: 0;
+    background: #f5f5f5;
+}
+
+#headMessage .iconfont {
+    font-size: 12px;
+}
+
+#headMessage li {
+    float: left;
+    padding: 0 6px;
+    line-height: 35px;
+    font-size: 12px;
+}
+
+#headMessage li.line {
+    padding: 0 5px;
+    color: #ddd;
+}
+
+#headMessage span.login {
+    color: #f22e00;
+}
+
+#headMessage a {
+    color: #6c6c6c;
+}
+
+#headMessage a:hover {
+    color: #f22e00;
+}

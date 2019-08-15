@@ -12,12 +12,12 @@
 /* 引入字体样式 */
 @import "iconfont.css";
 
-/* 箭头大小 */
 .allow {
     font-size: 12px;
     margin-left: 5px;
 }
 
+/* 头部信息 */
 #headMessage {
     font-size: 0;
     background: #f5f5f5;

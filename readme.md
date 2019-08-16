@@ -12,12 +12,21 @@
 
 - table 实现九宫格
   ```CSS
+    /*reset.css*/
     table {
-        border-collapse:collapse; /*边框模式，合并模式*/
+        border-collapse: collapse; /*边框模式，合并模式*/
     }
     td, th{
         padding: 0;
     }
+    /*index.css*/
+    table{
+        width:290px;
+        height:320px;
+        /*行列算法，根据tab宽高自动计算 td 宽高保持一致*/
+        table-layout: fixed;
+    }
+
   ```
 
 ## css 知识点

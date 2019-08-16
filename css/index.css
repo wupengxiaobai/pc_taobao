@@ -186,6 +186,7 @@ body {
     line-height: 14px;
     font-size: 14px;
     border: 1px solid #eee;
+    border-right: none;
     color: #ddd;
     cursor: pointer;
 
@@ -727,20 +728,174 @@ body {
 .firstRight {
     width: 290px;
     height: 621px;
-    background: pink;
+    background: #fff;
 }
 
 /* 用户 */
-.firstRight .user {}
+.firstRight .user {
+    text-align: center;
+    background: url(../images/user_bg.png) no-repeat;
+    padding: 6px 0 15px 0;
+}
+
+.firstRight .user .avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.firstRight .user .avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+.firstRight .user .avatar p {
+    height: 17px;
+    line-height: 17px;
+}
+
+.firstRight .user .member>a {
+    margin: 0 3px;
+    display: inline-block;
+    border-radius: 9px;
+    padding: 0px 10px 0px 20px;
+    color: #f22e00;
+}
+
+.firstRight .user .member .member-tjb {
+    background: #FFEEE5 url(../images/ico.png) 0px -572px no-repeat;
+}
+
+.firstRight .user .member .member-club {
+    background: #FFEEE5 url(../images/ico.png) 0px -528px no-repeat;
+}
+
+.firstRight .user .opera button {
+    margin: 0 3px;
+    text-align: center;
+    line-height: 25px;
+    width: 75px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+    cursor: pointer;
+}
+
+.firstRight .user .opera button.login {
+    width: 92px;
+}
+
 
 /* 举报信息 */
-.firstRight .tipOff {}
+.firstRight .tipOff {
+    display: block;
+    width: 290px;
+    line-height: 26px;
+    background: #FFEEE5;
+    text-align: center;
+    color: #f22e00;
+}
+
+.firstRight .tipOff span {
+    position: relative;
+    left: 30px;
+    font-size: 12px;
+}
 
 /* 公告区 */
-.firstRight .notice {}
+.firstRight .notice .title {
+    font-size: 0;
+    text-align: center;
+}
+
+.firstRight .notice .title li {
+    margin: 0 6px;
+    padding: 3px 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.firstRight .notice .title li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f22e00;
+}
+
+.firstRight .notice .title li:hover a {
+    color: #f40;
+}
+
+.firstRight .notice .content li {
+    margin: 0 12px;
+}
+
+.firstRight .notice .content li a {
+    float: left;
+    overflow: hidden;
+    padding-top: 9px;
+    width: 130px;
+}
+
+.firstRight .notice .content li a:hover {
+    color: #f22e00;
+}
+
+.firstRight .notice .content li a.item1 {
+    width: 100%;
+    color: #f22e00;
+}
 
 /* 图标 */
-.firstRight .icons {}
+.firstRight .icons {
+    margin-top: 17px;
+    width: 290px;
+    height: 232px;
+    /*算法，自动计算格子宽高，使其保持一致*/
+    table-layout: fixed;
+}
+
+.firstRight .icons td {
+    text-align: center;
+    border: 1px solid #f4f4f4;
+}
+
+.firstRight .icons td:hover a{
+    color: #f22e00;
+}
+
+.firstRight .icons td .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 11px;
+    background: url(../images/ico.png) no-repeat;
+}
+
+.firstRight .icons td span {
+    display: block;
+}
+
+.firstRight .icons td.item1 .icon {
+    background-position: 0 0;
+}
+
+.firstRight .icons td.item2 .icon {
+    background-position: 0 -87px;
+}
+
+.firstRight .icons td.item3 .icon {
+    background-position: 0 -174px;
+}
+
+.firstRight .icons td.item4 .icon {
+    background-position: 0 -261px;
+}
 
 /* app */
 .firstRight .app {}

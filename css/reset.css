@@ -38,6 +38,16 @@ button {
     outline: none;
 }
 
+table {
+    /*边框模式，合并模式*/
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 0;
+}
+
 body {
     /* 
         line-height:normal;

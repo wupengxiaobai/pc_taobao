@@ -7,7 +7,18 @@
     规则：1. 根目录 2. ico 后缀格式图片
   - base 默认链接
     a 标签的默认路径和打开方式
-- ## 三栏布局(中间居中)
+
+- 三栏布局(中间居中)
+
+- table 实现九宫格
+  ```CSS
+    table {
+        border-collapse:collapse; /*边框模式，合并模式*/
+    }
+    td, th{
+        padding: 0;
+    }
+  ```
 
 ## css 知识点
 
@@ -58,6 +69,9 @@
 
 - 图片垂直居中
   - display: table-cell;
+
+- 雪碧图使用
+  + background-position 
 
 ## 三方依赖
 

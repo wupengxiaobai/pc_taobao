@@ -14,7 +14,7 @@
      -->
     <link rel="icon" href="favicon.ico">
     <!-- base 标签 设置 a 标签 基础  href 默认指向该链接地址 -->
-    <base target="_blank" href="http://www.xbainy.cn">
+    <!-- <base target="_blank" href="http://www.xbainy.cn"> -->
 </head>
 
 <body>
@@ -48,7 +48,7 @@
             </li>
             <li>
                 <a href="">
-                    <span class="iconfont">&#xe732;</span>收藏夹
+                    <span class="iconfont mr5">&#xe732;</span>收藏夹
                 </a>
                 <span class="iconfont allow">&#xe772;</span>
             </li>
@@ -75,13 +75,304 @@
     </div>
 
     <!-- 头部广告 -->
-    <div id="headAd"></div>
+    <div id="headAd">
+        <div class="layer clearfix">
+            <a href="" class="fl go">
+                <img src="./images/go.png" alt="">
+            </a>
+            <ul class="fr">
+                <li class="item1">
+                    <img src="./images/adimg_01.jpg" alt="">
+                    <h3><a href="">电视会场</a></h3>
+                    <p><a href="">最高降2000</a></p>
+                </li>
+                <li class="item2">
+                    <img src="./images/adimg_02.jpg" alt="">
+                    <h3><a href="">电视会场</a></h3>
+                    <p><a href="">最高降2000</a></p>
+                </li>
+                <li class="item3">
+                    <img src="./images/adimg_03.jpg" alt="">
+                    <h3><a href="">电视会场</a></h3>
+                    <p><a href="">最高降2000</a></p>
+                </li>
+                <li class="item4">
+                    <img src="./images/adimg_04.jpg" alt="">
+                    <h3><a href="">电视会场</a></h3>
+                    <p><a href="">最高降2000</a></p>
+                </li>
+                <li class="item5">
+                    <img src="./images/adimg_05.jpg" alt="">
+                    <h3><a href="">电视会场</a></h3>
+                    <p><a href="">最高降2000</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-- 头部搜索 -->
-    <div id="headSearch"></div>
+    <div id="headSearch">
+        <div class="clearfix layer">
+            <!-- 三栏浮动特性
+                html 书写顺序：
+                    左浮动
+                    右浮动
+                    中间不浮动(margin:auto实现居中)
+            -->
+            <!-- logo 以图换字 -->
+            <h1 class="fl"><a href="">淘宝网</a></h1>
+            <!-- 二维码 -->
+            <div class="fr code">
+                <span class="close iconfont">×</span>
+                <p>手机淘宝</p>
+                <img src="./images/ewm.png" alt="淘宝二维码">
+            </div>
+            <!-- 搜索 -->
+            <div class="search">
+                <ul class="searchTab clearfix">
+                    <li class="active">宝贝</li>
+                    <li>天猫</li>
+                    <li>店铺</li>
+                </ul>
+                <div class="searchContent clearfix">
+                    <form action="">
+                        <div class="searchBox fl">
+                            <input type="text">
+                            <div class="placeholder">
+                                <i class="iconfont">&#xe752;</i>
+                                <span>网红裤腰带 洋气 国际范 9.9包邮</span>
+                            </div>
+                            <i class="iconfont creama">&#xe77e;</i>
+                        </div>
+                        <div class="btn fl">
+                            <button type="submit">搜索</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="srearchRecommend">
+                    <a href="">新款连衣裙</a>
+                    <a href="">四件套</a>
+                    <a href="">潮流T恤</a>
+                    <a href="">时尚女鞋</a>
+                    <a href="">短裤</a>
+                    <a href="">半身裙</a>
+                    <a href="">男士外套</a>
+                    <a href="">行车记录仪</a>
+                    <a href="">新款男鞋</a>
+                    <a href="">耳机</a>
+                    <a href="">时尚女包</a>
+                    <a href="">沙发</a>
+                    <a href="">墙纸</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- nav导航 -->
+    <div id="nav">
+        <div class="clearfix layer">
+            <h2 class="fl">主题市场</h2>
+            <ul class="clearfix">
+                <li class="size"><a href="">天猫</a></li>
+                <li class="size"><a href="">聚划算</a></li>
+                <li class="size"><a href="">天猫超市</a></li>
+                <li class="line">|</li>
+                <li class="size"><a href="">淘抢购</a></li>
+                <li class="size"><a href="">电器城</a></li>
+                <li class="size"><a href="">司法拍卖</a></li>
+                <li class="size"><a href="">淘宝心选</a></li>
+                <li class="size"><a href="">兴农扶贫</a></li>
+                <li class="line">|</li>
+                <li class="size"><a href="">飞猪旅行</a></li>
+                <li class="size"><a href="">智能生活</a></li>
+                <li class="size"><a href="">苏宁易购</a></li>
+                <li class="size"><a href="">云栖大会</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- 首屏内容 -->
-    <div id="firstScreen"></div>
+    <div id="firstScreen" class="layer clearfix">
+        <!-- 左边内容 -->
+        <div class="firstLeft fl clearfix">
+            <!-- 侧边导航 -->
+            <div class="sideNav fl">
+                <ul>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                    <li>
+                        <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a><span
+                            class="iconfont fr">&#xe775;</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 图片1容器 -->
+            <div class="img1Box fr mt10">
+                <div class="pic fl">
+                    <div class="swiper">
+                        <img src="./images/pic_01.jpg" alt="">
+                    </div>
+
+                    <div class="cicle">
+                        <span class="active"></span><span></span><span></span><span></span><span></span>
+                    </div>
+
+                    <button class="leftBtn">
+                        <span class="iconfont">&#xe779;</span>
+                    </button>
+                    <button class="rightBtn">
+                        <span class="iconfont">&#xe775;</span>
+                    </button>
+                </div>
+
+                <div class="rightPic fr">
+                    <img src="./images/ad_02.jpg" alt="">
+                </div>
+            </div>
+            <!-- 图片2容器 -->
+            <div class="img2Box fr clearfix">
+                <div class="pic fl">
+                    <div class="picTitle clearfix">
+                        <span class="fl bg">理想生活上天猫</span>
+                        <span class="fr"><span class="num">1</span>/6</span>
+                    </div>
+
+                    <div class="img">
+                        <img src="./images/pic_02.jpg" alt="">
+                        <img src="./images/pic_03.jpg" alt="">
+                    </div>
+
+                    <div class="line">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="leftBtn">
+                        <span class="iconfont">&#xe779;</span>
+                    </button>
+                    <button class="rightBtn">
+                        <span class="iconfont">&#xe775;</span>
+                    </button>
+                </div>
+                <div class="right fr">
+                    <div class="rightPicTitle">今日热卖</div>
+                    <div class="rightPic">
+                        <img src="./images/ad_03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 淘宝头条 -->
+            <div class="news fl mt10 clearfix">
+                <div class="hd fl">
+                    <h3>淘宝头条</h3>
+                    <p>让你生活更有趣</p>
+                </div>
+                <div class="newList fr">
+                    <div class="item clearfix">
+                        <a href="">
+                            <img class="fl" src="./images/news_img_01.jpg" alt="">
+                            <div class="content fr">
+                                <h4>夏日降温偏方，北欧风清新卫浴这般造</h4>
+                                <p>比起大动干戈的客厅打造，独爱那温馨的卫浴空间，任由安静的色泽与各好物发光发热，由此打造远离尘世的北欧空间，上演一出以无胜多的神奇逆袭，将清新感贯穿于细节之中，从此解禁夏日凉爽，get全新的降温时光。
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="more"><a href="">更多<span class="iconfont">&#xe775;</span></a></div>
+            </div>
+        </div>
+        <!-- 右侧内容 -->
+        <div class="firstRight fr  mt10">
+            <!-- 用户 -->
+            <div class="user">
+                <a href="">
+                    <div class="avatar"></div>
+                </a>
+                <p>Hi! 你好</p>
+                <div class="member">
+                    <div class="member-tjb">淘宝网 - 淘！我喜欢</div>
+                    <div class="member-club">会员俱乐部</div>
+                </div>
+                <div class="opera">
+                    <button>登录</button>
+                    <button>注册</button>
+                    <button>开店</button>
+                </div>
+            </div>
+            <!-- 举报信息 -->
+            <a href="">
+                <div class="tipOff"></div>
+            </a>
+            <!-- 公告区 -->
+            <div class="notice"></div>
+            <!-- 图标区域 -->
+            <div class="icons"></div>
+            <!-- app -->
+            <div class="app"></div>
+        </div>
+    </div>
 
     <!-- 有好货与爱逛街 -->
     <div id="layer"></div>

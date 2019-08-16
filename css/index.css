@@ -17,7 +17,15 @@
     margin-left: 5px;
 }
 
-/* 头部信息 */
+/* -----------------------------------------
+    头部信息
+   -----------------------------------------
+*/
+
+body {
+    padding-bottom: 200px;
+}
+
 #headMessage {
     font-size: 0;
     background: #f5f5f5;
@@ -50,3 +58,689 @@
 #headMessage a:hover {
     color: #f22e00;
 }
+
+
+/* -----------------------------------------
+    头部广告
+   -----------------------------------------
+*/
+#headAd {
+    background: #ff1122;
+    font-size: 0;
+}
+
+#headAd .go {
+    display: block;
+    padding: 10px 10px 10px 15px;
+}
+
+#headAd .go img {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+#headAd ul {
+    margin-top: 13px;
+}
+
+#headAd li {
+    float: left;
+    padding: 12px 15px 0 15px;
+    margin-right: 10px;
+    width: 209px;
+    height: 75px;
+    box-sizing: border-box;
+    /* 
+        盒模型
+            普通盒模型  content
+            IE盒模型（怪异盒模型）  border-box
+                宽高计算 paddig + border + 宽/高
+    */
+}
+
+#headAd li.item1 {
+    background: url(../images/adbg_01.png);
+}
+
+#headAd li.item2 {
+    background: url(../images/adbg_02.png);
+}
+
+#headAd li.item3 {
+    background: url(../images/adbg_03.png);
+}
+
+#headAd li.item4 {
+    background: url(../images/adbg_04.png);
+}
+
+#headAd li.item5 {
+    margin-right: 0px;
+    background: url(../images/adbg_05.png);
+}
+
+#headAd li a {
+    color: #fff;
+}
+
+#headAd li h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#headAd li p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#headAd li img {
+    float: right;
+    width: 52px;
+    height: 52px;
+    background: palevioletred;
+    border-radius: 5px;
+}
+
+/* -----------------------------------------
+    头部搜索
+   -----------------------------------------
+*/
+
+#headSearch {
+    padding: 24px 0 10px 0;
+    background: #fff;
+}
+
+/* logo */
+#headSearch h1 a {
+    display: block;
+    margin-top: 8px;
+    width: 190px;
+    height: 58px;
+    background: url(../images/logo.png) center no-repeat;
+    text-indent: -9999999px;
+}
+
+/* 二维码 */
+#headSearch .code {
+    position: relative;
+    margin-right: 110px;
+    width: 72px;
+    height: 86px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+#headSearch .code img {
+    width: 62px;
+    height: 62px;
+}
+
+#headSearch .close {
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    color: #ddd;
+    cursor: pointer;
+
+}
+
+/* 搜索区域 */
+#headSearch .search {
+    margin: 0 auto;
+    width: 628px;
+}
+
+#headSearch .searchTab {
+    margin-left: 17px;
+    height: 22px;
+}
+
+#headSearch .searchTab li {
+    float: left;
+    margin-right: 4px;
+    line-height: 22px;
+    text-align: center;
+    width: 36px;
+    height: 22px;
+    color: #f40;
+    cursor: pointer;
+}
+
+#headSearch .searchTab li.active {
+    font-weight: bold;
+    color: #fff;
+    /* 
+        背景渐变 IE10+
+            线性渐变
+                最简单 
+                    linear-grandent(方向, 颜色1, 颜色2)
+        IE 滤镜 filter 兼容 css3
+    */
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+    /* 边框圆角 */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#headSearch .searchTab li:hover {
+    background-color: #FFEEE5;
+}
+
+#headSearch .searchContent {
+    position: relative;
+    height: 40px;
+}
+
+#headSearch .searchBox {
+    overflow: hidden;
+    position: relative;
+    width: 554px;
+    height: 40px;
+    border: 2px solid #ff5000;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+
+}
+
+#headSearch .searchBox input {
+    line-height: 36px;
+    text-indent: 14px;
+    width: 490px;
+    height: 36px;
+    outline: none;
+    border: none;
+}
+
+#headSearch .searchBox .placeholder {
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+}
+
+#headSearch .searchBox .creama {
+    font-size: 22px;
+    color: #8c8c8c
+}
+
+#headSearch .btn {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 74px;
+    height: 40px;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+}
+
+#headSearch .btn button {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+    border: none;
+    cursor: pointer;
+}
+
+#headSearch .srearchRecommend {
+    padding: 5px 41px 0 0;
+    height: 20px;
+    overflow: hidden;
+}
+
+#headSearch a {
+    float: left;
+    white-space: nowrap;
+    margin-right: 3px;
+}
+
+#headSearch a:nth-of-type(3n+1) {
+    color: #ff5000;
+}
+
+
+/* -----------------------------------------
+    nav 导航
+   -----------------------------------------
+*/
+#nav {
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+}
+
+#nav h2 {
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    width: 190px;
+    font-size: 16px;
+    color: #fff;
+    background: #ff5000;
+}
+
+#nav ul {
+    line-height: 30px;
+    height: 30px;
+    margin-left: 190px;
+    /* 
+        width:1000px;
+        width:calc(100% - 190px);   兼容IE9+
+    */
+}
+
+#nav li {
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+#nav li a:hover::before {
+    content: '';
+    position: absolute;
+    background: url(../images/ico_01.gif);
+    width: 23px;
+    height: 13px;
+    top: -10px;
+    left: 50%;
+    margin-left: -11px;
+}
+
+#nav li.line {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    padding: 0;
+}
+
+#nav li a {
+    margin: 0 4px;
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* -----------------------------------------
+    首屏内容
+   -----------------------------------------
+*/
+#firstScreen {
+    overflow: hidden;
+}
+
+.firstLeft {
+    width: 890px;
+}
+
+/* 侧边导航 */
+.firstLeft .sideNav {
+    padding: 5px 0;
+    width: 190px;
+    height: 522px;
+    background: #fff;
+    border: 1px solid #ff5000;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.firstLeft .sideNav li {
+    padding-left: 25px;
+    padding-right: 19px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #666;
+    transition: .3s background;
+}
+
+.firstLeft .sideNav li .iconfont {
+    font-size: 12px;
+}
+
+.firstLeft .sideNav li:hover {
+    color: #ff5000;
+    background: #FFEEE5;
+}
+
+.firstLeft .sideNav li:hover a {
+    color: #ff5000;
+}
+
+.firstLeft .sideNav a:hover {
+    text-decoration: underline;
+}
+
+/* 图片1容器 */
+.firstLeft .img1Box {
+    width: 690px;
+    height: 280px;
+}
+
+.firstLeft .pic {
+    width: 520px;
+    height: 100%;
+    position: relative;
+}
+
+/* 首屏轮播 */
+.firstLeft .pic .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.firstLeft .pic .swiper img {
+    width: 100%;
+    height: 100%;
+}
+
+.firstLeft .pic:hover button {
+    display: block;
+}
+
+.firstLeft .pic button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    line-height: 30px;
+    height: 30px;
+    width: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+
+    /*仅IE9及以下浏览器认识*/
+    background: #0000\9;
+    filter: alpha(apacity=30);
+
+    border-radius: 0 15px 15px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.firstLeft .pic button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    background: #0000\9;
+    filter: alpha(apacity=20);
+}
+
+.firstLeft .pic button.leftBtn {
+    text-align: left;
+    left: 0;
+}
+
+.firstLeft .pic button.rightBtn {
+    right: 0;
+    text-align: right;
+    border-radius: 15px 0 0 15px;
+}
+
+.firstLeft .pic .cicle {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 14px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .3);
+
+    background: #fff\9;
+    filter: alpha(apacity=30);
+}
+
+.firstLeft .pic .cicle span {
+    margin: 3px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.firstLeft .pic .cicle span.active {
+    background: #f40;
+}
+
+.firstLeft .rightPic {
+    width: 160px;
+    height: 280px;
+}
+
+.firstLeft .rightPic img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 图片2容器 */
+.firstLeft .img2Box {
+    width: 690px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.firstLeft .img2Box .pic {
+    height: 230px;
+}
+
+.firstLeft .img2Box .pic .picTitle {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 135px;
+    color: #666;
+    font-size: 12px;
+}
+
+.firstLeft .img2Box .pic .picTitle .bg {
+    width: calc(100% - 200px);
+    height: 30px;
+    background: url(../images/title_bg.png) no-repeat;
+    background-position: left bottom;
+}
+
+.firstLeft .img2Box .pic .picTitle .num {
+    color: #f22e00;
+}
+
+.firstLeft .img2Box .pic .swiper {
+    background: #fff;
+    height: 200px;
+}
+
+.firstLeft .img2Box .pic button {
+    margin-top: -5px;
+}
+
+.firstLeft .img2Box .pic .line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 29px;
+    left: 0;
+    margin: 0;
+}
+
+.firstLeft .img2Box .pic .line span {
+    float: left;
+    width: 20%;
+    height: 3px;
+    background: #ff1648;
+    border-radius: 0;
+    margin: 0 !important;
+}
+
+.firstLeft .img2Box .pic .line span.active {
+    background: #000;
+}
+
+.firstLeft .img2Box .img {
+    position: relative;
+    width: 520px;
+    height: 200px;
+    background: #fff;
+
+    /* tab-cell 垂直居中 */
+    display: table-cell;
+    vertical-align: middle;
+
+    /* IE10+ */
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.firstLeft .img2Box .img img {
+    margin: 9px;
+    width: 240px;
+    height: 182px;
+
+}
+
+.firstLeft .img2Box .right {
+    width: 160px;
+    height: 230px;
+}
+
+.firstLeft .img2Box .right .rightPicTitle {
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    font-size: 12px;
+}
+
+.firstLeft .img2Box .right .rightPic {
+    height: 200px;
+}
+
+/* 淘宝头条 */
+.firstLeft .news {
+    position: relative;
+    padding: 13px 13px 13px 20px;
+    width: 890px;
+    height: 100px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.firstLeft .news .hd {
+    margin-top: 15px;
+    width: 180px;
+    height: 100%;
+}
+
+.firstLeft .news .hd h3 {
+    width: 129px;
+    height: 26px;
+    background: url(../images/news_logo.png) no-repeat;
+    text-indent: -99999px;
+}
+
+.firstLeft .news .hd p {
+    color: #999;
+    font-size: 14px;
+}
+
+.firstLeft .news .newList {
+    width: calc(100% - 180px);
+}
+
+.firstLeft .news .newList img {
+    width: 130px;
+    height: 73px;
+}
+
+.firstLeft .news .newList .content {
+    width: calc(100% - 145px);
+    margin-left: 15px;
+}
+
+.firstLeft .news .newList h4 {
+    margin-top: 2px;
+    color: #333;
+    height: 28px;
+    display: block;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.firstLeft .news .newList p {
+    color: #999;
+    height: 36px;
+    line-height: 18px;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.firstLeft .news .newList .item:hover h4 {
+    color: #f22e00;
+}
+
+.firstLeft .news .newList .item:hover img {
+    opacity: .8;
+}
+
+.firstLeft .news .newList p a {
+    color: #999;
+}
+
+.firstLeft .news .more {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+.firstLeft .news .more .iconfont {
+    font-size: 12px;
+}
+
+
+/* 首屏右侧 */
+.firstRight {
+    width: 290px;
+    height: 621px;
+    background: pink;
+}
+
+/* 用户 */
+.firstRight .user {}
+
+/* 举报信息 */
+.firstRight .tipOff {}
+
+/* 公告区 */
+.firstRight .notice {}
+
+/* 图标 */
+.firstRight .icons {}
+
+/* app */
+.firstRight .app {}

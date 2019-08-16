@@ -1,13 +1,13 @@
 /* 字体图标定义 */
 @font-face {
-    font-family: 'iconfont';
-    src: url('../font/');
-    src: url('../font/?#iefix') format('embedded-opentype'),
-        url('../font/iconfont.woff2') format('woff2'),
-        url('../font/iconfont.woff') format('woff'),
-        url('../font/iconfont.ttf') format('truetype'),
-        url('../font/iconfont.svg#iconfont') format('svg');
-}
+    font-family: 'iconfont';  /* project id 1354230 */
+    src: url('//at.alicdn.com/t/font_1354230_63d5v2qgh8l.eot');
+    src: url('//at.alicdn.com/t/font_1354230_63d5v2qgh8l.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1354230_63d5v2qgh8l.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1354230_63d5v2qgh8l.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1354230_63d5v2qgh8l.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1354230_63d5v2qgh8l.svg#iconfont') format('svg');
+  }
 
 .iconfont {
     font-family: "iconfont" !important;
@@ -15,44 +15,4 @@
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-playfill:before {
-    content: "\e74f";
-}
-
-.icon-biaoxingfill:before {
-    content: "\e732";
-}
-
-.icon-gouwuchefill:before {
-    content: "\e73c";
-}
-
-.icon-liuyanfill:before {
-    content: "\e743";
-}
-
-.icon-sousuo:before {
-    content: "\e752";
-}
-
-.icon-xiangshang1:before {
-    content: "\e76d";
-}
-
-.icon-xiangxia1:before {
-    content: "\e771";
-}
-
-.icon-xiangxia2:before {
-    content: "\e772";
-}
-
-.icon-xiangyou1:before {
-    content: "\e775";
-}
-
-.icon-caidan:before {
-    content: "\e790";
 }

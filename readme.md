@@ -39,6 +39,7 @@
   @font-face  自定义字体
   ```
 - 行高 `line-height`
+
   ```css
   body {
     font: 12px/1.5 tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
@@ -60,8 +61,6 @@
   }
   ```
 
-- 怪异盒模型 `box-sizing: border-box;`
-
 - calc(100% - 190px) IE9+
 
 - css hack
@@ -77,9 +76,22 @@
   }
   ```
 
-- 空格换行属性
+- css 背景渐变兼容
+
   ```CSS
-  
+  .bg{
+    background-image: linear-gradient(135deg, #ff971b, #ff5000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff971b', endColorstr='#ffff5000', GradientType=1);
+  }
+  ```
+
+- 空格换行属性
+
+  ```CSS
+    .text{
+      /*我的 他们*/
+      word-break: keep-all
+    }
   ```
 
 - 图片垂直居中
@@ -91,6 +103,7 @@
   - background-position
 
 - webp 格式图片
+  相比 jpg 等格式图片小很多，且没有其他副作用。 不兼容 ie
 
 ## 三方依赖
 

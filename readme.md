@@ -3,6 +3,7 @@
 ## html 知识点
 
 - head (头部信息)
+
   - ico 网站图标
     规则：1. 根目录 2. ico 后缀格式图片
   - base 默认链接
@@ -26,7 +27,6 @@
         /*行列算法，根据tab宽高自动计算 td 宽高保持一致*/
         table-layout: fixed;
     }
-
   ```
 
 ## css 知识点
@@ -59,6 +59,7 @@
       */
   }
   ```
+
 - 怪异盒模型 `box-sizing: border-box;`
 
 - calc(100% - 190px) IE9+
@@ -76,11 +77,18 @@
   }
   ```
 
+- 空格换行属性
+  ```CSS
+  
+  ```
+
 - 图片垂直居中
+
   - display: table-cell;
 
 - 雪碧图使用
-  + background-position 
+
+  - background-position
 
 - webp 格式图片
 

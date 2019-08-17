@@ -1,13 +1,12 @@
 /* 字体图标定义 */
 @font-face {
-    font-family: 'iconfont';
-    /* project id 1354230 */
-    src: url('https://at.alicdn.com/t/font_1354230_38z5h3p4tyi.eot');
-    src: url('https://at.alicdn.com/t/font_1354230_38z5h3p4tyi.eot?#iefix') format('embedded-opentype'),
-        url('https://at.alicdn.com/t/font_1354230_38z5h3p4tyi.woff2') format('woff2'),
-        url('https://at.alicdn.com/t/font_1354230_38z5h3p4tyi.woff') format('woff'),
-        url('https://at.alicdn.com/t/font_1354230_38z5h3p4tyi.ttf') format('truetype'),
-        url('https://at.alicdn.com/t/font_1354230_38z5h3p4tyi.svg#iconfont') format('svg');
+  font-family: 'iconfont';  /* project id 1354230 */
+  src: url('https://at.alicdn.com/t/font_1354230_c8wgg3cyw0d.eot');
+  src: url('https://at.alicdn.com/t/font_1354230_c8wgg3cyw0d.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_1354230_c8wgg3cyw0d.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/font_1354230_c8wgg3cyw0d.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_1354230_c8wgg3cyw0d.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_1354230_c8wgg3cyw0d.svg#iconfont') format('svg');
 }
 
 .iconfont {

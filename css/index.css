@@ -899,3 +899,40 @@ body {
 
 /* app */
 .firstRight .app {}
+
+.firstRight .app .appTitle {
+    line-height: 30px;
+}
+
+.firstRight .app .appTitle h3 {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.firstRight .app .appTitle span {
+    margin-right: 10px;
+}
+
+.firstRight .app .appList {
+    padding-left: 23px;
+}
+
+.firstRight .app .appList li {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right: 21px;
+    margin-bottom: 8px;
+}
+
+.firstRight .app .appList li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.firstRight .app .appList li a img {
+    width: 32px;
+    height: 32px;
+}

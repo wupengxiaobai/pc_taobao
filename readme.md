@@ -82,6 +82,8 @@
 - 雪碧图使用
   + background-position 
 
+- webp 格式图片
+
 ## 三方依赖
 
 - iconfont
